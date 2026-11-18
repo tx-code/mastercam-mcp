@@ -17,6 +17,8 @@ if (command === "version" || command === "--version" || command === "-v") {
   console.log(`mastercam-mcp ${VERSION}`);
 } else if (command === "serve") {
   await import("./server.js");
+} else if (command === "serve-mesh") {
+  await import("./mesh-server.js");
 } else if (command === "doctor") {
   const config = loadConfig();
   const mode = config.backend === "mock"
@@ -43,7 +45,7 @@ if (command === "version" || command === "--version" || command === "-v") {
   process.exit(result.status ?? 1);
 } else {
   console.error(
-    "Usage: mastercam-mcp [serve|doctor|benchmark|acceptance|install]\n" +
+    "Usage: mastercam-mcp [serve|serve-mesh|doctor|benchmark|acceptance|install]\n" +
     "Acceptance: mastercam-mcp acceptance --mock | --live [--allow-writes]\n" +
     "Live acceptance exits nonzero until required live inspection mappings pass; --allow-writes also gates write readiness.\n" +
     platformGuidance()

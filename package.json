@@ -23,6 +23,7 @@
     "native/MastercamMcp.ReadModel/**/*",
     "native/MastercamMcp.Addin.Legacy/**/*",
     "native/MastercamMcp.Addin.2027/**/*",
+    "native/MastercamMcp.MeshWorker.2027/**/*",
     "native/MastercamMcp.ApiCatalog/**/*",
     "docs",
     "install.ps1",

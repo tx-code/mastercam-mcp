@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <AssemblyName>MastercamMcp.MeshWorker</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NETHook3_0">
+      <HintPath>$(MASTERCAM_ROOT)\NETHook3_0.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

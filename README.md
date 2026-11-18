@@ -1,5 +1,7 @@
 # Mastercam MCP
 
+This fork adds a [local STEP-to-STL MCP server for Mastercam 2027](docs/STEP-STL.md).
+
 ![Illustration of a CNC turning workflow](media/overview/public/workflow_illustration.png)
 
 [Watch the sample data walkthrough](media/overview/out/mastercam_overview.mp4)
